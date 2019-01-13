@@ -90,11 +90,13 @@
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="113dp"
-        android:layout_height="114dp"
+        android:layout_width="122dp"
+        android:layout_height="184dp"
         android:layout_marginStart="157dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="21dp"
         android:layout_marginEnd="158dp"
+        android:layout_marginBottom="4dp"
+        android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:onClick="onButtonClick"
         android:scaleType="centerCrop"
@@ -103,7 +105,7 @@
         app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spotify"
-        app:srcCompat="@drawable/final_enock" />
+        app:srcCompat="@drawable/door_closed" />
 
     <ImageButton
         android:id="@+id/spotify"
@@ -136,5 +138,38 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/eknock_logo" />
+
+    <TextView
+        android:id="@+id/textFinal"
+        android:layout_width="390dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="29dp"
+        android:background="@drawable/grey_message"
+        android:fontFamily="@font/mclaren"
+        android:text="  Based on your mood, I suggest:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/spotify"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResult3"
+        app:layout_constraintVertical_bias="0.615" />
+
+    <ImageButton
+        android:id="@+id/cmha_button"
+        android:layout_width="130dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="750dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="59dp"
+        android:onClick="linkToSite"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.578"
+        app:srcCompat="@drawable/cmha_logo" />
 
 </android.support.constraint.ConstraintLayout>
